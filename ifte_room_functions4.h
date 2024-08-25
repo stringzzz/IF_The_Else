@@ -2139,8 +2139,12 @@ bool room_MANSION3(char name[], int *current_location, bool actions[], int *coin
 		}
 	} else if (strcmp(chosen_action, "place stuffed bear") == 0 || strcmp(chosen_action, "set stuffed bear") == 0 || strcmp(chosen_action, "put stuffed bear") == 0) {
 		if (!actions[PLACE_STUFFED_BEAR] && actions[GET_STUFFED_BEAR]) {
-			printf("You place the stuffed bear on the table.\nYou hear a girls's voice: 'Beary, you came back to me!'\n\n");
-			actions[PLACE_STUFFED_BEAR] = 1;
+			if (actions[GET_BLUE_BOOK]) {
+				printf("You place the stuffed bear on the table.\nYou hear a girls's voice: 'Beary, you came back to me!'\n\n");
+				actions[PLACE_STUFFED_BEAR] = 1;
+			} else if (!actions[GET_BLUE_BOOK]) {
+				printf("There is already a BLUE BOOK on the table...\n\n");
+			}
 		} else if (!actions[PLACE_STUFFED_BEAR] && !actions[GET_STUFFED_BEAR]) {
 			printf("You don't have a stuffed bear!\n\n");
 		} else if (actions[PLACE_STUFFED_BEAR]) {

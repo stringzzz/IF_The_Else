@@ -18,7 +18,7 @@ Then action: get/take/grab/etc. rock
 
 This is just the tip of the iceberg for the action options you have. In certain places you may be able to try different things, just use some logic, and don't be afraid to think outside the box.
 
-There are also several different 'game over' scenarios in the game, so it would be a wise choice to save regularly, it can save a lot of headaches.
+There are also several different 'game over' scenarios in the game, so it would be a wise choice to save regularly, it can save a lot of headaches. To save you just enter 'save game' as an action anytime you have the 'Enter an action: ' prompt.
 
 Finally, if you find yourself in an area where there are ridiculous puzzles and weird things going on, congratulations, you are in the final area.
 Good luck! -stringzzz

@@ -1,5 +1,5 @@
 /*
-    IF: The Else (ifte_room_functions4.h Header File) Interactive fiction game written in C
+    IF: The Else (ifte_room_functions5.h Header File) Interactive fiction game written in C
     Copyright (C) 2024 stringzzz, Ghostwarez Co.
 
     This program is free software: you can redistribute it and/or modify
@@ -6996,6 +6996,12 @@ bool room_THE_ELSE15(char name[], int *current_location, bool actions[], int *co
 	int correct[] = { 0, GREEN, ORANGE, VIOLET, BLUE, INDIGO, YELLOW, RED };
 	char orbs[][24] = { "is empty", "has the RED ORB",  "has the ORANGE ORB",  "has the YELLOW ORB",  "has the GREEN ORB",  "has the BLUE ORB",  "has the INDIGO ORB",  "has the VIOLET ORB" };
 	static int pedestals[] = { 0, RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET };
+
+	if (actions[FINAL_PUZZLE_SOLVED]) {
+		for (int i = 1; i < 8; i++) {
+			pedestals[i] = correct[i];
+		}
+	}
 	
 	printf("In this room is the squirrel-like CREATURE, the WITCH, the MUSHROOM CREATURE, the JESTER, and the OLD MAN.\nThere are seven pedestals in the center.\n");
 	if (!actions[FINAL_PUZZLE_SOLVED]) {

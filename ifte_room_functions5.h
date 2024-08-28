@@ -21,7 +21,7 @@
 	IF: The Else (Interactive Fiction Game)
 	Full version (Room Functions Header)
 	Start date: 08-02-2024
-	Complete date: 08-26-2024
+	Complete date: 08-27-2024
 	By stringzzz, Ghostwarez Co.
 */
 

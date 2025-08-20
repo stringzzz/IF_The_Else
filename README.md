@@ -24,3 +24,7 @@ Finally, if you find yourself in an area where there are ridiculous puzzles and 
 Good luck! -stringzzz
 
 P.S. There are several obscure easter eggs in the game, have fun finding them! :P
+
+WINDOWS USERS: In order to prevent the executable window from closing after saving and quitting or getting a game over, you may need to add:
+system("pause");
+On its own line in the main code right before the return statement.

@@ -25,8 +25,9 @@ Good luck! -stringzzz
 
 P.S. There are several obscure easter eggs in the game, have fun finding them! :P
 
+
 WINDOWS USERS: In order to prevent the executable window from closing after saving and quitting or getting a game over, you may need to add:
 
 system("pause");
 
-On its own line in the main code right before the return statement.
+On its own line in the main code (IF_The_Else.c) right before the return statement, otherwise you may have no idea you even got a game over since you won't be able to read the final message it outputs.
